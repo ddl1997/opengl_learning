@@ -13,13 +13,88 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\Shader">
+      <UniqueIdentifier>{e49ecd56-3291-42d6-8ea5-101ee3437bec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Shader\vertex">
+      <UniqueIdentifier>{c8cd3e62-139f-4933-8459-e1d5b9c91a34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Shader\fragment">
+      <UniqueIdentifier>{41313525-6998-4e7a-bb6d-cd72ec83fe2b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="main1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="main2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="transform.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="coordinate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fileloader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fpscamera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1.vs">
+      <Filter>源文件\Shader\vertex</Filter>
+    </None>
+    <None Include="1.fs">
+      <Filter>源文件\Shader\fragment</Filter>
+    </None>
+    <None Include="2.vs">
+      <Filter>源文件\Shader\vertex</Filter>
+    </None>
+    <None Include="2.fs">
+      <Filter>源文件\Shader\fragment</Filter>
+    </None>
+    <None Include="3.fs">
+      <Filter>源文件\Shader\fragment</Filter>
+    </None>
+    <None Include="3.vs">
+      <Filter>源文件\Shader\vertex</Filter>
+    </None>
+    <None Include="4.vs">
+      <Filter>源文件\Shader\vertex</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="container.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="awesomeface.png">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>

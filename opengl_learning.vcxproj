@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -81,8 +81,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>E:\ddl\opengl\opengl_learning\glad\include;E:\ddl\opengl\opengl_learning\glfw3\include;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\ddl\opengl\opengl_learning\glfw3;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\ddl\opengl\opengl_learning\includes;E:\ddl\opengl\opengl_learning\includes\glfw3\include;E:\ddl\opengl\opengl_learning\includes\glad\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\ddl\opengl\opengl_learning\includes\glfw3;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -146,8 +146,44 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="coordinate.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="glad.c" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="main2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="image.cpp" />
+    <ClCompile Include="transform.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fileloader.h" />
+    <ClInclude Include="fpscamera.h" />
+    <ClInclude Include="shader.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="texture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1.fs" />
+    <None Include="1.vs" />
+    <None Include="2.fs" />
+    <None Include="2.vs" />
+    <None Include="3.fs" />
+    <None Include="3.vs" />
+    <None Include="4.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="awesomeface.png" />
+    <Image Include="container.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
